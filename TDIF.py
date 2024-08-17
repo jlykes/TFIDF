@@ -7,10 +7,10 @@ import docx
 import pysrt
 
 # Global variables for input/output files, documents folder, and known words file
-INPUT_FILENAME = 'SampleInput1.srt'
-OUTPUT_FILENAME = 'TDIF_output.xlsx'
-DOCUMENTS_FOLDER = '_All Proccessed Media'
-KNOWN_WORDS_FILENAME = '240807 Known Words (Skritter).txt'
+INPUT_FILENAME = 'Sample_Input_Media_To_Process.srt'
+OUTPUT_FILENAME = 'Sample_Output.xlsx'
+DOCUMENTS_FOLDER = 'Sample_Corpus'
+KNOWN_WORDS_FILENAME = 'Sample_Known_Words.txt'
 
 def load_known_words(filename):
     with open(filename, 'r', encoding='utf-8') as file:
