@@ -12,17 +12,15 @@ OUTPUT_FILENAME = 'Sample_Output.xlsx'
 DOCUMENTS_FOLDER = 'Sample_Corpus'
 KNOWN_WORDS_FILENAME = 'Sample_Known_Words.txt'
 
-""" 
-Loads the file that contains the words that the user already knows. These words will be filtered out of the TFIDF analysis.
-"""
+
+#Loads the file that contains the words that the user already knows. These words will be filtered out of the TFIDF analysis.
 def load_known_words(filename):
     with open(filename, 'r', encoding='utf-8') as file:
         known_words = {line.strip() for line in file}
     return known_words
 
-"""
-Calculates the raw frequency of each word in the target media, and returns a dictionary with the count of each word.
-"""
+
+#Calculates the raw frequency of each word in the target media, and returns a dictionary with the count of each word.
 def calculate_target_media_word_frequency(filename):
     thu = thulac.thulac(seg_only=True)
     text = ""
@@ -44,9 +42,8 @@ def calculate_target_media_word_frequency(filename):
         word_freq[word] += 1
     return word_freq
 
-"""
-Goes through the folder containing all of the other reference documents that will be used in the comparison against the target media, and returns those documents as a list.
-"""
+
+#Goes through the folder containing all of the other reference documents that will be used in the comparison against the target media, and returns those documents as a list.
 def pull_reference_documents(folder_path):
     document_list = []
     for filename in os.listdir(folder_path):
@@ -66,9 +63,8 @@ def pull_reference_documents(folder_path):
     return document_list
 
 
-"""
-Calculates TFIDF for each word, as well as other intermediate statistics used in the TFIDF calculation.
-"""
+
+# Calculates TFIDF for each word, as well as other intermediate statistics used in the TFIDF calculation.
 def calculate_statistics(word_list, document_list):
     total_num_documents = len(document_list)
     
@@ -82,9 +78,7 @@ def calculate_statistics(word_list, document_list):
     return word_list
 
 
-"""
-Saves output to Excel - list of words, in decreasing order of TFIDF.
-"""
+#Saves output to Excel - list of words, in decreasing order of TFIDF.
 def save_to_excel(word_list, output_filename):
     df = pd.DataFrame(word_list)
     df = df.sort_values(by='TFIDF', ascending=False)
