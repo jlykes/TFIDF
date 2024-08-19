@@ -21,7 +21,7 @@ The YouTube video does a much better job of explaining, so please view that.
 The tool calculate TFIDF using the same formula outlined in the video: 
 
 ```math
-\left( right)
+\left( \right)
 ```
 
 
