@@ -27,6 +27,9 @@ The tool calculates TFIDF using the same formula outlined in the video: <br><br>
 \left( \# \ appearances \ in\ target \ media \right) * ln\left( \frac{total\ \# \ of \ other \ media \ documents }{\# \ of \ other \ media \ documents \ containing \ word}\right)
 ```
 <br><br>
+
+The tool looks at the words of your target media, calculates TFIDF for each (based on comparing against a folder of other media documents), and then outputs into an Excel file. 
+
 There are a few sample files / directories provided in the repository. These are all Mandarin Chinese, but should work for other languages.
 
 * **`Sample_Input_Media_To_Process.srt`:** This is the target media that you are about to consume, which contains all of the words that you want to calculate TFDIF for. This sample is an SRT subtitles file, but the tool also accepts .txt, and .docx. 
