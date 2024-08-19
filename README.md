@@ -19,12 +19,12 @@ The YouTube video does a much better job of explaining, so please view that.
 
 # How the tool works
 
-The tool calculates TFIDF using the same formula outlined in the video: 
+The tool calculates TFIDF using the same formula outlined in the video: <br><br>
 
 ```math
 \left( \# \ mentions\ in\ target \ content \right) * ln\left( \frac{total\ \# \ of \ documents }{\# \ of \ documents \ containing \ word}\right)
 ```
-
+<br><br>
 There are a few sample files / directories provided in the repository:
 
 * **`Sample_Input_Media_To_Process.srt`:** This is the target media that you are about to consume, that contains all of the words that you want to calculate TFDIF for. The sample file is an SRT subtitles file, but the tool also accepts .txt, and .docx. 
