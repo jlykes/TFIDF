@@ -48,6 +48,8 @@ At this time, I have not written any GUI or command line interface. So to use th
 
 You will just need to replace my sample input files with your own. Each of the input / output document names are declared as global variables at the top of the script, so you can edit directly there. 
 
+You will also need to make sure you have installed the following libraries (all can be installed using pip): thulac, pandas, docx, pysrt
+
 <br>
 
 # Known issues
