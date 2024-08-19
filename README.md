@@ -22,7 +22,7 @@ The YouTube video does a much better job of explaining, so please view that.
 The tool calculates TFIDF using the same formula outlined in the video: <br><br>
 
 ```math
-\left( \# \ mentions\ in\ target \ content \right) * ln\left( \frac{total\ \# \ of \ documents }{\# \ of \ documents \ containing \ word}\right)
+\left( \# \ mentions\ in\ target \ media \right) * ln\left( \frac{total\ \# \ of \ media \ documents }{\# \ of \ media \ documents \ containing \ word}\right)
 ```
 <br><br>
 There are a few sample files / directories provided in the repository:
