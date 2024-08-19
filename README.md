@@ -1,10 +1,10 @@
 # TFIDF
 
-Calculate TFIDF (Term Frequency Inverse Document Frequency) for language learning, following the approach outlined by the YouTube Channel [One Word At A Time](https://www.youtube.com/@OneWordataTime1) in their video, [What to do when language rushes by](https://www.youtube.com/watch?v=hJyJ7DLmSfQ).
+Calculates TFIDF (Term Frequency Inverse Document Frequency) for language learning, following the approach outlined by the YouTube Channel [One Word At A Time](https://www.youtube.com/@OneWordataTime1) in their video, [What to do when language rushes by](https://www.youtube.com/watch?v=hJyJ7DLmSfQ).
 
 Before you read or watch something in your target language, it is often useful to know what vocabulary you should learn beforehand to understand that content. 
 
-One simple approach is to create a list of words in that content sorted by frequency of appearance, and then making sure to learn the words that are most common in that text. 
+One simple approach is to create a list of words in that content sorted by frequency of appearance, and then learn the words that are most common in that text. 
 
 That can be a fine approach, but there are often words that aren't at the top of the frequency list, but yet are still very important to learn because they may be uniquely key to the meaning of that text. 
 
@@ -24,7 +24,7 @@ The YouTube video does a much better job of explaining, so please view that.
 The tool calculates TFIDF using the same formula outlined in the video: <br><br>
 
 ```math
-\left( \# \ mentions\ in\ target \ media \right) * ln\left( \frac{total\ \# \ of \ other \ media \ documents }{\# \ of \ other \ media \ documents \ containing \ word}\right)
+\left( \# \ appearances \ in\ target \ media \right) * ln\left( \frac{total\ \# \ of \ other \ media \ documents }{\# \ of \ other \ media \ documents \ containing \ word}\right)
 ```
 <br><br>
 There are a few sample files / directories provided in the repository. These are all Mandarin Chinese, but should work for other languages.
@@ -52,7 +52,7 @@ You will just need to replace my sample input files with your own. Each of the i
 
 # Known issues
 
-So far, this script has only been tested with Mandarin Chinese, using Simplified Characters. The script may fail entirely for other languages, especially those that have conjugations / cases. My hope is that by looking at the source code, you can modify for your given language.
+So far, this script has only been tested with Mandarin Chinese, using Simplified Characters. The script may fail entirely for other languages, especially those that have conjugations and case endings. My hope is that by looking at the source code, you can modify for your given language.
 
 <br>
 
