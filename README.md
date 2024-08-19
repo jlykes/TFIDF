@@ -15,7 +15,7 @@ The logic is that if a word is common in one piece of content, but not common in
 
 The YouTube video does a much better job of explaining, so please view that. 
 
-<br><br>
+<br>
 
 # How the tool works
 
@@ -38,19 +38,19 @@ There are a few sample files / directories provided in the repository:
 
 The tool will go through each word in `Sample_Input_Media_To_Process.srt`, and calculate TFIDF using the media in the folder `Sample_Corpus` as the set of documents for comparision. If it encounters a word in `Sample_Known_Words.txt`, it will exclude it from the analysis given the user already knows that word. It will then output everything into `Sample_Output.xlsx`. 
 
-<br><br>
+<br>
 
 # How to use
 
 To be written
 
-<br><br>
+<br>
 
 # Known issues
 
 So far, this script has only been tested with Mandarin Chinese, using Simplified Characters. The script may fail entirely for other languages, especially those that have conjugations / cases. My hope is that by looking at the source code, you can modify for your given language.
 
-<br><br>
+<br>
 
 # Interested in learning more?
 
